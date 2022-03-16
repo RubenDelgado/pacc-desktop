@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class CuentaMzone {\n  constructor(identificador = '', usuario = '') {\n    this.identificador = identificador;\n    this.usuario = usuario;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

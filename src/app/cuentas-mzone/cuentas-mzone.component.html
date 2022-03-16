@@ -1,0 +1,105 @@
+<div class="container box" style="padding-top: 3rem;">
+
+    <form #activacionesForm="ngForm">
+
+        <div class="alert {{mensaje != null && mensaje != '' && mensaje != undefined && mensaje.includes('ERROR') ? 'alert-danger' : 'alert-success'}} alert-dismissible fade show" role="alert" style="margin-top: .5rem; display: {{mensaje == null || mensaje == '' || mensaje == undefined  ? 'NONE' : ''}};">
+            {{mensaje}}
+            <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close" (click)="ocultarMensaje();">
+                
+            </button>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-header-blue">
+                    <h1 class="card-heading"> <i class="fa fa-group"></i> Cuentas MZone</h1>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-3 ">
+                            <div class="form-group" style="padding-top: 1rem; ">
+                                <label for="identificador"><span style="color: red;"><b>*</b></span> Identificador:</label>
+                                <input type="text" class="form-control" id="identificador" required [(ngModel)]="cuentaMzone.identificador" name="identificador" #identificador="ngModel" style="margin-top: .5rem;">
+                                <div class="alert alert-danger" id="mensajeIdentificador" style="margin-top: .5rem; display: {{mensajeIdentificador == null || mensajeIdentificador == '' || mensajeIdentificador == undefined  ? 'NONE' : ''}};">
+                                    {{mensajeIdentificador}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 ">
+                            <div class="form-group" style="padding-top: 1rem; ">
+                                <label for="usuario"><span style="color: red;"><b>*</b></span> Usuario:</label>
+                                <input type="text" class="form-control" id="usuario" required [(ngModel)]="cuentaMzone.usuario" name="usuario" #identificador="ngModel" style="margin-top: .5rem;">
+                                <div class="alert alert-danger" id="mensajeUsuario" style="margin-top: .5rem; display: {{mensajeUsuario == null || mensajeUsuario == '' || mensajeUsuario == undefined  ? 'NONE' : ''}};">
+                                    {{mensajeUsuario}}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <nav class="card-nav">
+                        <button type="button" class="btn btn-secondary btn-sm" (click)="cancelar(); " style="margin-right: .5rem;"><i class="fa fa-return"></i> Regresar </button>
+                        <button type="button" class="btn btn-warning btn-sm" (click)="cancelar(); " style="margin-right: .5rem;"><i class="fa fa-download"></i> Descargar Plantilla </button>
+                        <button type="button" class="btn btn-info btn-sm" (click)="cancelar(); " style="margin-right: .5rem;"><i class="fa fa-upload"></i> Carga Masiva </button>
+                        <button type="button" class="btn btn-primary btn-sm" (click)="cancelar(); " style="margin-right: .5rem;"><i class="fa fa-search"></i> Consultar </button>
+                        <button type="button" class="btn btn-danger btn-sm" (click)="cancelar(); " style="margin-right: .5rem;"><i class="fa fa-ban"></i> Cancelar </button>
+                        <button type="submit" class="btn btn-success btn-sm" (click)="registrar(); "><i class="fa fa-save"></i> Agregar </button>
+                    </nav>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+
+                <div class="card-body">
+                    <div class="row">
+                        <table mat-table [dataSource]="dataSource" id="excel-table">
+
+                            <!-- Name Column -->
+                            <ng-container matColumnDef="id">
+                                <th mat-header-cell *matHeaderCellDef> # </th>
+                                <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+                            </ng-container>
+
+                            <!-- Name Column -->
+                            <ng-container matColumnDef="proceso">
+                                <th mat-header-cell *matHeaderCellDef> Proceso </th>
+                                <td mat-cell *matCellDef="let element"> {{element.proceso}} </td>
+                            </ng-container>
+
+                            <!-- Name Column -->
+                            <ng-container matColumnDef="mensaje">
+                                <th mat-header-cell *matHeaderCellDef> Mensaje </th>
+                                <td mat-cell *matCellDef="let element"> {{element.mensaje}} </td>
+                            </ng-container>
+
+                            <!-- Name Column -->
+                            <ng-container matColumnDef="status">
+                                <th mat-header-cell *matHeaderCellDef> Estatus </th>
+                                <td mat-cell *matCellDef="let element">
+
+
+                                    <span style="color: {{ element.status == true ? 'green' : 'red'}}"><i class="fa {{ element.status == true ? 'fa-check' : 'fa-exclamation-triangle'}}" ></i></span>
+
+                                </td>
+                            </ng-container>
+
+
+                            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </form>
+
+</div>

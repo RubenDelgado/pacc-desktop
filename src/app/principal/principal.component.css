@@ -1,0 +1,13 @@
+html,
+body {
+    margin: 0px;
+    height: 100%;
+}
+
+.box {
+    height: 100vh;
+    background-image: url('../../assets/background-1.png');
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+}

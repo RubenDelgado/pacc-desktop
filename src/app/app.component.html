@@ -1,0 +1,32 @@
+<mat-drawer-container>
+
+    <mat-drawer #drawer mode="side" disableClose="true" opened="true" style="display: {{mostrarMenu == null || mostrarMenu == false || mostrarMenu == undefined  ? 'NONE' : ''}};">
+        <button mat-mini-fab (click)="isExpanded = !isExpanded" color="warn" style="margin: 10px;">
+      <mat-icon aria-label="Menu">menu</mat-icon>
+    </button>
+
+        <mat-nav-list>
+            <mat-list-item [routerLink]="'inicio'">
+                <mat-icon mat-list-icon>home</mat-icon>
+                <h4 mat-line *ngIf="isExpanded">Inicio</h4>
+            </mat-list-item>
+            <mat-list-item [routerLink]="'cuentas-mzone'">
+                <mat-icon mat-list-icon>groups</mat-icon>
+                <h4 mat-line *ngIf="isExpanded">Cuentas MZone</h4>
+            </mat-list-item>
+            <mat-list-item (click)="cerrarSesion();">
+                <mat-icon mat-list-icon>logout</mat-icon>
+                <h4 mat-line *ngIf="isExpanded">Cerrar Sesion</h4>
+            </mat-list-item>
+
+        </mat-nav-list>
+    </mat-drawer>
+
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</mat-drawer-container>
+
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">
+    <p style="color: white">Un momento porfavor. </p>
+</ngx-spinner>

@@ -1,0 +1,49 @@
+<div class="container centrar" center>
+
+    <form (ngSubmit)="login()" #loginForm="ngForm" style="align-content: center;">
+
+        <div class="card">
+
+            <h2 style="text-align: center;">Login</h2>
+            <hr>
+
+            <div class="form-group" style="padding-top: 1rem; text-align: left;">
+                <label for="usuario"><span style="color: red;"><b>*</b></span> Usuario:</label>
+                <input type="text" class="form-control" id="usuario" required name="usuario" [(ngModel)]="user.usuario" #usuario="ngModel" style="margin-top: .5rem;">
+                <div class="alert alert-danger" id="mensajeUsuario" style="margin-top: .5rem; display: {{mensajeUsuario == null || mensajeUsuario == '' || mensajeUsuario == undefined  ? 'NONE' : ''}};">
+                    {{mensajeUsuario}}
+                </div>
+
+            </div>
+
+            <div class="form-group" style="padding-top: 1rem; text-align: left;">
+                <label for="password"><span style="color: red;"><b>*</b></span> Password:</label>
+                <div class="input-group">
+                    <input [type]="show ? 'text' : 'password'" class="form-control" id="password" required name="password" [(ngModel)]="user.password" #password="ngModel" style="margin-top: .5rem;">
+                    <div class="input-group-append" style="margin-top: .5rem;">
+                        <button class="btn btn-outline-secondary" type="button" (click)="showPassword()"><i class="fa {{show ? 'fa-eye-slash' : 'fa-eye'}}"></i></button>
+                    </div>
+                </div>
+                <div class="alert alert-danger" id="mensajePassword" style="margin-top: .5rem; display: {{mensajePassword == null || mensajePassword == '' || mensajePassword == undefined  ? 'NONE' : ''}};">
+                    {{mensajePassword}}
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 2rem;">
+                <div class="col-12">
+                    <button type="button" class="btn btn-danger" (click)="cancelar(); loginForm.reset()" style="float: left;"> CANCELAR</button>
+                    <button type="submit" class="btn btn-success" [disabled]="!loginForm.form.valid" style="float: right;"> ENTRAR</button>
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 1rem;">
+                <div class="alert alert-danger" id="mensajeError" style="margin-top: .5rem; display: {{mensajeError == null || mensajeError == '' || mensajeError == undefined  ? 'NONE' : ''}};">
+                    {{mensajeError}}
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+
+</div>

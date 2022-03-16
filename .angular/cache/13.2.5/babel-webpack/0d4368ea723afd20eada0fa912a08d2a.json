@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Proceso {\n  constructor(id = 0, proceso = '', mensaje = '', status = false) {\n    this.id = id;\n    this.proceso = proceso;\n    this.mensaje = mensaje;\n    this.status = status;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
