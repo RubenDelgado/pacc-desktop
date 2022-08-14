@@ -1,0 +1,31 @@
+{
+    "description": "USER 0001",
+    "userGroup_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+    "username": "USER@CCTIC3",
+    "firstName": "USER",
+    "surname": "CCTIC3",
+    "utcOffset": -360,
+    "timeZoneId": 11,
+    "language_Code": "ES-ES",
+    "unitOfMeasureDistance_Id": "a54104b8-2a37-471f-92db-3f98c60b966d",
+    "unitOfMeasureFluid_Id": "01f4a7f9-55b1-4b6d-a65a-eb85f48fdfb8",
+    "utcDaylightSavingOffset": -300,
+    "utcDaylightSavingStart": "2022-04-03T06:00:00Z",
+    "utcDaylightSavingEnd": "2022-10-30T05:00:00Z",
+    "isUserGroupAdmin": true,
+    "isPasswordChangeDue": false,
+    "password": "Circulo2022*",
+    "loginEnabled": true,
+    "roleIds": [
+        "36506a21-c004-400f-a018-94b16349bb81",
+        "9f372a12-aea9-4385-9515-49b6354a9632",
+        "32a45a2c-7696-4394-8450-1588f715d377",
+        "687f7169-e581-47d5-bdb0-bb773f6ae9cd",
+        "1bedf187-1be1-415e-aa2d-8507de048997",
+        "39963b0c-ca40-4cc4-b9ed-f97baa2dac79",
+        "9bc81a22-bc7a-481c-aee2-9c2621524b06"
+    ],
+    "securityGroupIds": [
+        "de01c7a4-cbc4-406e-9616-99880a818870"
+    ]
+}

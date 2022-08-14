@@ -1,0 +1,31 @@
+[{
+        "rule_Id": "90caedb8-8fcd-4055-b39f-05dbb5f43ca8",
+        "action_Id": "5e28c0a0-5d2e-4b0b-a6c2-a4f288954a80",
+        "vehicleGroup_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6"
+    }, {
+        "rule_Id": "b33d1e84-288e-48e4-ae05-5b098bfaff63",
+        "action_Id": "5e28c0a0-5d2e-4b0b-a6c2-a4f288954a80",
+        "vehicleGroup_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6"
+    }, {
+        "rule_Id": "4e09266a-e657-4505-9d15-dba9601fdd9a",
+        "action_Id": "5e28c0a0-5d2e-4b0b-a6c2-a4f288954a80",
+        "vehicleGroup_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6"
+    }, {
+        "rule_Id": "685cec9a-0009-4c28-aad6-ed7159859a86",
+        "action_Id": "5e28c0a0-5d2e-4b0b-a6c2-a4f288954a80",
+        "vehicleGroup_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6"
+    }, {
+        "rule_Id": "7a39ebcc-e7f8-4d2d-9822-71cb528a3b9b",
+        "action_Id": "5e28c0a0-5d2e-4b0b-a6c2-a4f288954a80",
+        "vehicleGroup_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6"
+    }, {
+        "rule_Id": "a6691c44-2fa3-4813-b3cd-d7c33db18d5c",
+        "action_Id": "5e28c0a0-5d2e-4b0b-a6c2-a4f288954a80",
+        "vehicleGroup_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6"
+    }, {
+        "rule_Id": "5da78990-a6bc-442f-b98b-e49e0b14d4e4",
+        "action_Id": "5e28c0a0-5d2e-4b0b-a6c2-a4f288954a80",
+        "vehicleGroup_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6"
+    }
+
+]

@@ -1,0 +1,39 @@
+[{
+        "key": "coloredTrips",
+        "value": "true"
+    }, {
+        "key": "defaultScreenRoute",
+        "value": "dashboard"
+    }, {
+        "key": "mapExtent",
+        "value": "[-115.474691123548,8.385517393090225,-88.93279484362223,34.885829975396334]"
+    }, {
+        "key": "mapType",
+        "value": "GoogleMap"
+    }, {
+        "key": "notifyEnabled",
+        "value": "true"
+    }, {
+        "key": "notifySound",
+        "value": "Notify"
+    }, {
+        "key": "notifySoundEnabled",
+        "value": "true"
+    }, {
+        "key": "showVehicleDescriptionOnMap",
+        "value": "true"
+    }, {
+        "key": "toastTimeout",
+        "value": "5"
+    }, {
+        "key": "tripPlaybackFollow",
+        "value": "true"
+    }, {
+        "key": "useBrowserTimezone",
+        "value": "true"
+    }, {
+        "key": "useLegacyPopup",
+        "value": "false"
+    }
+
+]

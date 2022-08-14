@@ -1,0 +1,27 @@
+[{
+        "apiKeyType": 1,
+        "key": "AIzaSyD7dzudRVejLGnqjmlFt11MG_4o863bJxA",
+        "description": "A3tek Location Description",
+        "userGroup_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "userGroupIds": [
+            "552c8ac0-9a3e-49ee-be00-9d911113ffa6"
+        ]
+    }, {
+        "apiKeyType": 2,
+        "key": "AIzaSyD7dzudRVejLGnqjmlFt11MG_4o863bJxA",
+        "description": "A3Tek google key",
+        "userGroup_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "userGroupIds": [
+            "552c8ac0-9a3e-49ee-be00-9d911113ffa6"
+        ]
+    }, {
+        "apiKeyType": 4,
+        "key": "AIzaSyD7dzudRVejLGnqjmlFt11MG_4o863bJxA",
+        "description": "A3Tek 3D playback key",
+        "userGroup_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "userGroupIds": [
+            "552c8ac0-9a3e-49ee-be00-9d911113ffa6"
+        ]
+    }
+
+]

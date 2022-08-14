@@ -1,0 +1,77 @@
+[{
+        "description": "Exceso de velocidad",
+        "eventTypeGroup1_Id": "e09e1d9d-013c-4e1b-93d7-38e0a6708a7f",
+        "placeGroup1_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "cooldown": 30,
+        "isOrderSignificant": true,
+        "maximumDuration": 0,
+        "sourceEvent": 1,
+        "ruleType_Id": "5934359c-fd28-427b-abe7-511c18874a75"
+    }, {
+        "description": "Botón de Pánico",
+        "eventTypeGroup1_Id": "9d473309-25ab-49f1-848e-9ad5d9972825",
+        "placeGroup1_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "eventTypeGroup1Inside": false,
+        "cooldown": 30,
+        "isOrderSignificant": true,
+        "maximumDuration": 0,
+        "sourceEvent": 1,
+        "ruleType_Id": "5934359c-fd28-427b-abe7-511c18874a75"
+    }, {
+        "description": "Entrada a Geocerca",
+        "eventTypeGroup1_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "eventTypeGroup2_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "placeGroup1_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "placeGroup2_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "eventTypeGroup1Inside": false,
+        "eventTypeGroup2Inside": true,
+        "cooldown": 30,
+        "isOrderSignificant": true,
+        "maximumDuration": 120,
+        "sourceEvent": 1,
+        "ruleType_Id": "5934359c-fd28-427b-abe7-511c18874a75"
+    }, {
+        "description": "Salida de Geocerca",
+        "eventTypeGroup1_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "eventTypeGroup2_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "placeGroup1_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "placeGroup2_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "eventTypeGroup1Inside": true,
+        "eventTypeGroup2Inside": false,
+        "cooldown": 30,
+        "isOrderSignificant": true,
+        "maximumDuration": 120,
+        "sourceEvent": 1,
+        "ruleType_Id": "5934359c-fd28-427b-abe7-511c18874a75"
+    }, {
+        "description": "Desconexión de Energía Principal",
+        "eventTypeGroup1_Id": "1d47bdf2-6022-4226-bcc7-0516af59706b",
+        "placeGroup1_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "cooldown": 30,
+        "isOrderSignificant": true,
+        "maximumDuration": 0,
+        "sourceEvent": 1,
+        "ruleType_Id": "5934359c-fd28-427b-abe7-511c18874a75"
+    }, {
+        "description": "Movimiento con Motor Apagado",
+        "eventTypeGroup1_Id": "86504993-9300-470e-975b-f51cf1755442",
+        "placeGroup1_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "eventTypeGroup1Inside": false,
+        "cooldown": 30,
+        "isOrderSignificant": true,
+        "maximumDuration": 0,
+        "sourceEvent": 1,
+        "ruleType_Id": "5934359c-fd28-427b-abe7-511c18874a75"
+    }, {
+        "description": "Alerta CIPIA",
+        "eventTypeGroup1_Id": "d0b5c0bf-e052-48d8-b288-080217be142e",
+        "placeGroup1_Id": "552c8ac0-9a3e-49ee-be00-9d911113ffa6",
+        "eventTypeGroup1Inside": false,
+        "cooldown": 30,
+        "isOrderSignificant": true,
+        "maximumDuration": 0,
+        "sourceEvent": 1,
+        "ruleType_Id": "5934359c-fd28-427b-abe7-511c18874a75"
+    }
+
+]

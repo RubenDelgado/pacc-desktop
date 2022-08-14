@@ -1,0 +1,246 @@
+[{
+        "description": "Desconexión de Energía principal",
+        "alertLevel": 1
+    },
+    {
+        "description": "Conductor cansado (fatiga)",
+        "alertLevel": 2,
+        "mapMarker": 19
+    },
+    {
+        "description": "Desconexión de alimentación",
+        "alertLevel": 2,
+        "mapMarker": 19
+    },
+    {
+        "description": "Conductor distraído",
+        "alertLevel": 2,
+        "mapMarker": 19
+    },
+    {
+        "description": "Estado de cámara correcto",
+        "alertLevel": 2,
+        "mapMarker": 19
+    },
+    {
+        "description": "Conductor no usando cinturón de seguridad",
+        "alertLevel": 2,
+        "mapMarker": 19
+    },
+    {
+        "description": "Obstrucción de cámara",
+        "alertLevel": 2,
+        "mapMarker": 19
+    },
+    {
+        "description": "Inicio de cámara correcto",
+        "alertLevel": 2,
+        "mapMarker": 19
+    },
+    {
+        "description": "Conductor desaparecido",
+        "alertLevel": 2,
+        "mapMarker": 19
+    },
+    {
+        "description": "Conductor fumando",
+        "alertLevel": 2,
+        "mapMarker": 19
+    },
+    {
+        "description": "Conductor usando teléfono móvil",
+        "alertLevel": 2,
+        "mapMarker": 19
+    },
+    {
+        "description": "Paro Standard Desctivado",
+        "mapMarker": 5
+    },
+    {
+        "description": "Desactivar",
+        "mapMarker": 7
+    },
+    {
+        "description": "Exceso de Velocidad",
+        "mapMarker": 2
+    },
+    {
+        "description": "Inicio de ralentí",
+        "mapMarker": 2
+    },
+    {
+        "description": "Inicio de Sobrevelocidad",
+        "mapMarker": 2
+    },
+    {
+        "description": "Sirena Desactivada",
+        "mapMarker": 5
+    },
+    {
+        "description": "FMS Datos",
+        "mapMarker": 6
+    },
+    {
+        "description": "Movimiento Detectado Motor apagado",
+        "alertLevel": 1,
+        "mapMarker": 11
+    },
+    {
+        "description": "Accidente",
+        "alertLevel": 1,
+        "mapMarker": 11
+    },
+    {
+        "description": "Sirena Activa",
+        "mapMarker": 7
+    },
+    {
+        "description": "Frenada Brusca",
+        "mapMarker": 2
+    },
+    {
+        "description": "Pánico activo",
+        "alertLevel": 1,
+        "mapMarker": 11
+    },
+    {
+        "description": "Giro x Giro",
+        "mapMarker": 12
+    },
+    {
+        "description": "Exceso de Tiempo Muerto",
+        "mapMarker": 2
+    },
+    {
+        "description": "Luces Desactivadas",
+        "mapMarker": 5
+    },
+    {
+        "description": "Batería Baja",
+        "mapMarker": 11
+    },
+    {
+        "description": "Datos de Telemetría",
+        "mapMarker": 6
+    },
+    {
+        "description": "Datos de combustible consolidados",
+        "mapMarker": 6
+    },
+    {
+        "description": "Unidad Reportando \"OK\"",
+        "mapMarker": 17
+    },
+    {
+        "description": "Dato de Combustible",
+        "mapMarker": 6
+    },
+    {
+        "description": "Arrastre",
+        "alertLevel": 1,
+        "mapMarker": 2
+    },
+    {
+        "description": "Desconexión de Antena",
+        "mapMarker": 11
+    },
+    {
+        "description": "Puerta Abierta",
+        "mapMarker": 7
+    },
+    {
+        "description": "Equipo Removido",
+        "alertLevel": 1,
+        "mapMarker": 11
+    },
+    {
+        "description": "Temperatura Periódica",
+        "mapMarker": 6
+    },
+    {
+        "description": "Exceso Aceleración",
+        "mapMarker": 2
+    },
+    {
+        "description": "Panico CR2 Desactivado",
+        "mapMarker": 5
+    },
+    {
+        "description": "Nivel de Combustible",
+        "mapMarker": 6
+    },
+    {
+        "description": "Vehículo Detenido",
+        "mapMarker": 1
+    },
+    {
+        "description": "Salida de Geocerca",
+        "mapMarker": 5
+    },
+    {
+        "description": "Localización bajo solicitud",
+        "mapMarker": 13
+    },
+    {
+        "description": "Pánico Cellocator Desactivado",
+        "mapMarker": 11
+    },
+    {
+        "description": "Fin de Viaje",
+        "mapMarker": 19
+    },
+    {
+        "description": "Panico Desactivado",
+        "mapMarker": 11
+    },
+    {
+        "description": "Puerta Cerrada",
+        "mapMarker": 5
+    },
+    {
+        "description": "Inicio de Viaje",
+        "mapMarker": 18
+    },
+    {
+        "description": "Conexión de Antena",
+        "mapMarker": 15
+    },
+    {
+        "description": "Paro Gradual Desactivado",
+        "mapMarker": 5
+    },
+    {
+        "description": "Paro Gradual Activado",
+        "mapMarker": 7
+    },
+    {
+        "description": "Pánico Cellocator Activado",
+        "alertLevel": 1,
+        "mapMarker": 11
+    },
+    {
+        "description": "Notificación de Servicio",
+        "alertLevel": 1,
+        "mapMarker": 9
+    },
+    {
+        "description": "Conexión Energía principal",
+        "mapMarker": 15
+    },
+    {
+        "description": "Paro CR2 Activado",
+        "mapMarker": 7
+    },
+    {
+        "description": "Luces Activadas",
+        "mapMarker": 7
+    },
+    {
+        "description": "Paro Standard Activado",
+        "mapMarker": 7
+    },
+    {
+        "description": "Entrada a Geocerca",
+        "mapMarker": 7
+    }
+]

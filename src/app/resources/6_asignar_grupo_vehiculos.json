@@ -1,0 +1,16 @@
+{
+    "vehicleGroup_Id": "7a9cc7c7-65f3-4c92-86a8-6cabe24302fd",
+    "vehicleGroup_Description": "Todos los Vehículos.",
+    "placeGroup_Id": "7a9cc7c7-65f3-4c92-86a8-6cabe24302fd",
+    "placeGroup_Description": "Todos los lugares",
+    "state": 0,
+    "debounce": 0,
+    "geofenceType_Id": "98d75663-58e4-4fc7-9cb6-668db405aa05",
+    "isAll": false,
+    "vehicleGroup_Ids": [
+        "7a9cc7c7-65f3-4c92-86a8-6cabe24302fd"
+    ],
+    "placeGroup_Ids": [
+        "7a9cc7c7-65f3-4c92-86a8-6cabe24302fd"
+    ]
+}

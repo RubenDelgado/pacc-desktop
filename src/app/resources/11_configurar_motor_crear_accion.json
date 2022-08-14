@@ -1,0 +1,11 @@
+[{
+        "description": "Nitificación de seguridad con velocidad",
+        "notificationTemplate_Id": "4b6c00d3-ab7c-4129-898f-6643d26e03c9",
+        "actionType_Id": "0003215c-50e4-4cd1-b4dd-fa0c9c641323"
+    }, {
+        "description": "Notificación de evento",
+        "notificationTemplate_Id": "9b4645b6-0f13-408d-9770-988fa6b40ebb",
+        "actionType_Id": "0003215c-50e4-4cd1-b4dd-fa0c9c641323"
+    }
+
+]

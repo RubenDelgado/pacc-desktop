@@ -1,0 +1,39 @@
+[{
+    "description": "Desconexión de Energía Principal",
+    "eventTypeIds": [
+        "b0deaa21-bf04-48d6-8d9e-09e462680d7d",
+        "0a24bd46-861a-4c68-bba8-7ecc5ef75aba",
+        "9695c9ae-9ad7-46a6-af5c-8dd5b5d91abd",
+        "13e9e92a-5f31-4cc4-8d84-aff742cc0008"
+    ]
+}, {
+    "description": "Eventos CIPIA",
+    "eventTypeIds": [
+        "ff7d8b57-0049-45df-b846-0a96e4a5ce6a",
+        "ff7d040c-6ff4-483b-a0a9-24a8069a9991",
+        "ff7d6e10-c1fa-4739-9908-325f282be048",
+        "ff7d0ee4-c741-42e2-9c84-59050faaa37a",
+        "ff7dceb6-0a39-4af8-acab-7665385c95ec",
+        "ff7ecab8-bab4-42e9-a7a7-97c3acf36358",
+        "ff7dd56f-3ca4-4923-a8aa-a37465d1aa17",
+        "3720312a-4cfc-4c48-9f95-bae5b9260526",
+        "ff7d0dba-1238-4c12-bad0-d5b16faeb94c",
+        "ff7d4927-0b23-42be-a06f-ef029bf6c3ce"
+    ]
+}, {
+    "description": "Exceso de velocidad",
+    "eventTypeIds": [
+        "c3631253-8405-4979-9397-1597d35b8055"
+    ]
+}, {
+    "description": "Botón de Pánico",
+    "eventTypeIds": [
+        "e32d0fd2-a125-4ee6-8c16-3ed526c1772c",
+        "a860516c-639b-4866-81eb-d27744d0d4d7"
+    ]
+}, {
+    "description": "Movimiento con motor apagado",
+    "eventTypeIds": [
+        "be740bef-5622-4fc9-8fac-21ccae427e03"
+    ]
+}]

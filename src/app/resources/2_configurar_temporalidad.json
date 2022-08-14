@@ -1,0 +1,17 @@
+[{
+        "key": "MZ6_Rules_ShowIntervalFields",
+        "value": "true"
+    },
+    {
+        "key": "UserGroup_Security_SessionTimeout",
+        "value": "true"
+    },
+    {
+        "key": "UserGroup_Security_NewUserPasswordChange",
+        "value": "true"
+    },
+    {
+        "key": "UserGroup_IntrusiveAlertsOff",
+        "value": "true"
+    }
+]
