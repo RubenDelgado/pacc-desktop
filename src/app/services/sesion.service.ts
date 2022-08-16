@@ -19,26 +19,29 @@ export class SesionService {
     private http: HttpClient,
     private cookies: CookieService) { }
 
-  usaurio: string = "";
+  usuario: string = "";
   password: string = "";
   tokenSession: string = "";  
 
   public getIniciarSesion(user: Usuario) : Observable<RespuestaToken>{
 
-    this.endpoint = 'https://login.mzoneweb.net/'
-    this.usaurio = user.usuario!;
+    this.endpoint = 'https://login.mzoneweb.net/';
+    this.usuario = user.usuario!;
     this.password = user.password!;
 
-    console.log('ENDPOINT: '+this.endpoint)
-    console.log('USUARIO: '+this.usaurio)
-    console.log('PASSWORD: '+this.password)
+    console.log('ENDPOINT: '+this.endpoint);
+    console.log('USUARIO: '+this.usuario);
+    console.log('PASSWORD: '+this.password);
 
     const httpOptions = {
       headers: new HttpHeaders({
         'Accept': '*/*',
+        'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/x-www-form-urlencoded'
       })
     } 
+
+    //const httpOptions = { 'Content-Type': 'application/x-www-form-urlencoded' };
     console.log('HEADERS: '+JSON.stringify(httpOptions));
 
     const body = new HttpParams()
@@ -46,15 +49,17 @@ export class SesionService {
         .set('client_id', 'mz-a3tek')
         .set('client_secret', 'WJ4wUJo79qFsMm4T9Rj7dKw4')
         .set('scope', 'openid mz6-api.all mz_username')
-        .set('username', this.usaurio)
+        .set('username', this.usuario)
         .set('password', this.password);
+
+    //const body = { 'grant_type': 'password', 'client_id': 'mz-a3tek', 'client_secret': 'WJ4wUJo79qFsMm4T9Rj7dKw4', 'scope': 'openid mz6-api.all mz_username', 'username': this.usuario, 'password': this.password };
     console.log('BODY: '+JSON.stringify(body));
 
     return this.http.post<RespuestaToken>(this.endpoint + 'connect/token', body, httpOptions)
     .pipe(
       retry(1),
       catchError(this.handleError)
-    )
+    );
 
   }
 
@@ -105,21 +110,23 @@ export class SesionService {
         }else{
           console.log('NO ES ERROR: error.error.error_description');
         }
-      }
-      
-
-      if(error.hasOwnProperty('error.error.message')){
+      }else if(error.hasOwnProperty('error.error.message')){
         if(typeof(error.error.error.message) !== 'undefined' && error.error.error.message != undefined && error.error.error.message != null){
           console.log("MENSAJE DE ERROR 2 : "+error.error.error.message);
           mensaje = error.error.error.message
         }else{
           console.log('NO ES ERROR: error.error.error.message');
         }
-      }
-      
-      if(error.hasOwnProperty('message')){
+      }else if(error.hasOwnProperty('error')){
+        if(typeof(error.error) !== 'undefined' && error.error != undefined && error.error != null){
+          console.log("MENSAJE DE ERROR 3 : "+error.error.error_description);
+          mensaje = error.error.error_description;
+        }else{
+          console.log('NO ES ERROR: error.error');
+        }
+      }else if(error.hasOwnProperty('message')){
         if(typeof(error.message) !== 'undefined' && error.message != undefined && error.message != null){
-          console.log("MENSAJE DE ERROR 3 : "+error.message);
+          console.log("MENSAJE DE ERROR 4 : "+error.message);
           mensaje = error.message;
         }else{
           console.log('NO ES ERROR: error.message');
